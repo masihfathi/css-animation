@@ -18,7 +18,7 @@ img {
 }
 .caption {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ img {
     color: #fff;
     background: black;
     transition: all .2s;
-    transform: translateY(40%);
+    transform: translateX(100%);
 }
 .caption h1 {
     text-transform: uppercase;
@@ -42,8 +42,8 @@ img {
     text-transform: capitalize;
 }
 .container:hover .caption {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 .container:hover img {
-    transform: translateY(0);
+    transform: translateX(0);
 }
