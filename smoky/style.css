@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    background-color: #3b3b3b;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li {
+    list-style: none;
+    color: white;
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    transition:all 1s ease-out;
+    text-transform: capitalize;    
+    transform: scale(1);
+}
+ul:hover li {
+    transform:translateY(-200px) rotate(45deg);
+    opacity: 0;
+    filter: blur(20px);    
+}
+li:nth-child(1) {
+    transition-delay: .2s;
+}
+li:nth-child(2) {
+    transition-delay: .4s;
+}
+li:nth-child(3) {
+    transition-delay: .6s;
+}
+li:nth-child(4) {
+    transition-delay: .8s;
+}
+li:nth-child(5) {
+    transition-delay: 1s;
+}
